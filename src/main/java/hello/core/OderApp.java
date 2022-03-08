@@ -10,8 +10,10 @@ import hello.core.order.orderService;
 
 public class OderApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        orderService orderService = new OrderServiceImpl();
+
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        orderService orderService = appConfig.orderService();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
