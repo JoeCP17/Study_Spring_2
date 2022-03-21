@@ -1,3 +1,3 @@
 # Study_Spring_2
 
-Configuration 
+빈스코프 전까지
